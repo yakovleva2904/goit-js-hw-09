@@ -1,0 +1,33 @@
+.gallery-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1128px;
+}
+
+.gallery-item {
+    width: calc((100% - 2 * 24px) / 3);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.04);
+    }
+}
+
+.simple-lightbox {
+    background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper.simple-lightbox .sl-navigation button,
+.sl-wrapper.simple-lightbox .sl-close,
+.sl-wrapper.simple-lightbox .sl-counter {
+    color: #fff;
+}
