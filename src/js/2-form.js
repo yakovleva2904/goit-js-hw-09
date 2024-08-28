@@ -36,6 +36,12 @@ const submitHandler = e => {
     console.log(formData);
     e.target.reset();
     localStorage.removeItem('feedback-form-state');
+
+    //clean object
+    formData = {
+      email: '',
+      message: '',
+    };
     
 };
 
